@@ -18,7 +18,12 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "br.maua.telemetria.poctcc"
+      "package": "br.maua.telemetria.poctcc",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -31,6 +36,11 @@
           "bluetoothAlwaysPermission": "O app usa o Bluetooth para ler a telemetria do módulo ESP32 instalado no carro."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4abaeee5-8024-4a98-b909-53aa511d0ee5"
+      }
+    }
   }
 }
